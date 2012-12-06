@@ -1,7 +1,7 @@
-// g++ -o switch switch.cpp
-// RC Mains socket control program by Geoff Johnson.
-// (c) 2012 Geoff Johnson.
+// g++ -o transmit transmit.cpp
+// Rpi to Arduino Wireless Trasmitter by Sarrailh Remi.
 // Based on the example GPIO in C program by Dom and Gert.
+// Based on the RC Mains socket control program by Goeff Johnson
 
 // Access from ARM Running Linux
 
@@ -40,11 +40,12 @@ volatile unsigned *gpio;
 
 // function prototypes.
 void setup_io();
-void SendCode(char* szCode);
+void SendCode(char* szCode, int number);
 
 int main(int argc, char **argv)
 { 
 	int g,rep;
+	int send_numbers;
 
 		// Set up gpi pointer for direct register access
 		setup_io();
@@ -55,8 +56,13 @@ int main(int argc, char **argv)
 
 		char szOn[500] = {0};
 
-		strcpy(szOn, "111111111010101011111111"); 
-		SendCode(szOn);
+        //Send Message put in arguments ex: switch "11110010101010"
+
+		strcpy(szOn, "11111111");
+		send_numbers = atol (argv[1]);
+		send_numbers = send_numbers * 10 + 15;
+		SendCode(szOn,send_numbers);
+                //I noticed the Rpi tends to continue to send 111111 after the end of the code so I clear the GPIO before the ends
 		GPIO_CLR = 1<<7;
 	return 0;
 } // main
@@ -108,16 +114,16 @@ void setup_io()
 } // setup_io
 
 // Function to send the output code to the RF transmitter connected to GPIO 7.
-void SendCode(char* szCode)
+void SendCode(char* szCode, int number)
 {
 	timespec sleeptime;
 	timespec remtime;
 
-	for (int iSend = 0 ; iSend < 24 ; iSend++)
+	for (int iSend = 1 ; iSend <= number; iSend++)
 	{
 		sleeptime.tv_sec = 0;
-		sleeptime.tv_nsec = 10000000; // value obtained by trial and error to match transmitter
-
+	 	sleeptime.tv_nsec = 1000000; // 1ms : Value on the Arduino Code you can change it to try.
+	                        
 		for (int i = 0 ; i < strlen(szCode) ; i++)
 		{
 			if (szCode[i] == '1')
@@ -130,7 +136,8 @@ void SendCode(char* szCode)
 			}
 			nanosleep(&sleeptime,&remtime);
 		}
-		sleeptime.tv_nsec = 10000000; //10ms
-		nanosleep(&sleeptime,&remtime);
+		
+		//sleeptime.tv_nsec = 10000000; //10ms This delay happens after the message was sent
+		//nanosleep(&sleeptime,&remtime);
 	}
 }
