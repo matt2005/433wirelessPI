@@ -40,8 +40,8 @@ You have to copy this library inside arduino/librairies.
 An example for how to use this can be founded inside the library.
 
 Functions: 
-Piwi piwi(2);  //Initiate Receiver at Digital Pin 2
-piwi.listen(); //Listen to Transmitter
+- Piwi piwi(2);  //Initiate Receiver at Digital Pin 2
+- piwi.listen(); //Listen to Transmitter
 
 - /rpi/ardwl_cs.sh
 Put Digital Pin on Arduino on/off
