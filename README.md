@@ -11,22 +11,22 @@ That's it!
 Objects you can control with this code:
 -------------------------------------------
 Arduino
-SCS 3616-2 Power Outlet
+SCS 316-2 Power Outlet
 -------------------------------------------
 
-SCS 3616-2---------------------------------
-/rpi/scs_s3616
+SCS 316-2---------------------------------
+/rpi/scs_s3162
 
-This program put SCS3616-2 Outlet On/Off
+This program put SCS316-2 Outlet On/Off
 
 WARNING: KEEP IN MIND THAT THESES OUTLETS CAN BE CONTROL BY ANYONE KNOWING THE CODES AND WILL NOT WORK IF 433.92Mhz is saturated.
 		 NEVER USE THIS FOR CRITICAL APPLICATIONS.
 
-Exemple of usage : ./scs_s3616 a1 1 (Put A1 Outlet On)
+Exemple of usage : ./scs_s3162 a1 1 (Put A1 Outlet On)
 
 You have to be root to execute this program.
 
-Every codes has been tested and can be found inside : /rpi/scs_s3816_2/ (in text and audio format)
+Every codes has been tested and can be found inside : /rpi/scs_s316_2/ (in text and audio format)
 ---------------------------------------------
 
 Arduino-------------------------------------

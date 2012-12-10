@@ -1,10 +1,10 @@
-// scs_s3616.cpp
+// scs_s3162.cpp
 //
-// To compile this: gcc -o scs_s3616 scs_s3616.cpp
-// This program can be use to control SCS S3616-2 Remote Controlled Outlet
+// To compile this: gcc -o scs_s3162 scs_s3162.cpp
+// This program can be use to control SCS S316-2 Remote Controlled Outlet
 // By default you'll need a 433.92Mhz transmitter at GPIO 7 on your Raspberry PI
 
-// Ce programme permet de controler des prises radio commandées SCS S3616-2
+// Ce programme permet de controler des prises radio commandées SCS S316-2
 // Vous pouvez les acheter ici:
 // http://scs-laboutique.com/Electricite/Commande+a+distance/s3162+1000w+kit+2+prises+telecommand-111
 // 
@@ -482,8 +482,8 @@ int main(int argc, char **argv)
 		{
 			printf("You write an wrong argument\n");
 			printf("Outlets are from A1 to F4\n");
-			printf("Usage: scs_s3616 outlet_number on/off \n");
-			printf("Exemple: scs_s3616 a1 1\n");
+			printf("Usage: scs_s3162 outlet_number on/off \n");
+			printf("Exemple: scs_s3162 a1 1\n");
 			return 1;
 		}
 	
@@ -492,8 +492,8 @@ int main(int argc, char **argv)
 	else
 	{
 	printf("Not Enough Arguments\n");
-	printf("Usage: scs_s3616 outlet_number on/off \n");
-	printf("Exemple: scs_s3616 a1 1\n");
+	printf("Usage: scs_s3162 outlet_number on/off \n");
+	printf("Exemple: scs_s3162 a1 1\n");
 	return 1;
 	}
 	

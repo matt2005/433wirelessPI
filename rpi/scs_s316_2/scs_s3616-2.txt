@@ -1,10 +1,10 @@
-SCS S3616-2 1000W Code ----------------------------------------------------------------------------
+SCS S316-2 1000W Code ----------------------------------------------------------------------------
 By Sarrailh Remi
 ---------------------------------------------------------------------------------------------------
 
-Theses codes can be use to control SCS S3616-2 Remote Controlled Outlet
+Theses codes can be use to control SCS S316-2 Remote Controlled Outlet
 
-Ces codes permet de controler des prises radio commandées SCS S3616-2
+Ces codes permet de controler des prises radio commandées SCS S316-2
 Vous pouvez les acheter ici:
 http://scs-laboutique.com/Electricite/Commande+a+distance/s3162+1000w+kit+2+prises+telecommand-111
 
