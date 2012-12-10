@@ -1,4 +1,4 @@
-// g++ -o transmit transmit.cpp
+// gcc -o arduino_wireless arduino_wireless.cpp
 // Rpi to Arduino Wireless Trasmitter by Sarrailh Remi.
 // Based on the example GPIO in C program by Dom and Gert.
 // Based on the RC Mains socket control program by Goeff Johnson
