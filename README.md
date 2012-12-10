@@ -10,12 +10,13 @@ That's it!
 
 Objects you can control with this code:
 -------------------------------------------
-Arduino
-SCS 3616-2 Power Outlet
--------------------------------------------
+- Arduino
+- SCS 3616-2 Power Outlet
 
-SCS 3616-2---------------------------------
-/rpi/scs_s3616
+
+SCS 3616-2
+-------------------------------------------
+- /rpi/scs_s3616
 
 This program put SCS3616-2 Outlet On/Off
 
@@ -27,10 +28,11 @@ Exemple of usage : ./scs_s3616 a1 1 (Put A1 Outlet On)
 You have to be root to execute this program.
 
 Every codes has been tested and can be found inside : /rpi/scs_s3816_2/ (in text and audio format)
----------------------------------------------
 
-Arduino-------------------------------------
-/arduino/piwi
+
+Arduino
+-------------------------------------------
+- /arduino/piwi
 
 Piwi Library.
 You have to copy this library inside arduino/librairies.
@@ -41,10 +43,10 @@ Functions:
 Piwi piwi(2);  //Initiate Receiver at Digital Pin 2
 piwi.listen(); //Listen to Transmitter
 
-/rpi/ardwl_cs.sh
+- /rpi/ardwl_cs.sh
 Put Digital Pin on Arduino on/off
 
 Example: ardwl_cs.sh 6 1 (Put Digital Pin 6 on)
---------------------------------------------
+
  
 
