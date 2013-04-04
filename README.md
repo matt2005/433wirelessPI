@@ -11,10 +11,10 @@ That's it!
 Objects you can control with this code:
 -------------------------------------------
 - Arduino
-- SCS 3616-2 Power Outlet
+- SCS 3616-2 Power Outlet (OBSOLETE --> https://github.com/maditnerd/hcc/ )
 
 
-SCS 3616-2
+SCS 3616-2 (OBSOLETE --> https://github.com/maditnerd/hcc/ )
 -------------------------------------------
 - /rpi/scs_s3616
 
