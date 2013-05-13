@@ -1,3 +1,13 @@
+All theses codes is for archiving purpose only and should be considered obsolete
+=============
+
+Control an arduino
+https://github.com/maditnerd/RpiArduinoCommand
+
+Control SCS 3612-2 Power Outlet
+https://github.com/maditnerd/hcc/
+
+
 433wirelessPI
 =============
 This GITHUB contains programs to communicate with objects with 433.92Mhz Receiver with an Raspberry PI
