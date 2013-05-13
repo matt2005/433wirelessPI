@@ -4,7 +4,7 @@ All theses codes is for archiving purpose only and should be considered obsolete
 Control an arduino
 https://github.com/maditnerd/RpiArduinoCommand
 
-Control SCS 3612-2 Power Outlet
+Control SCS / CHACON / DIO Power Outlet
 https://github.com/maditnerd/hcc/
 
 
