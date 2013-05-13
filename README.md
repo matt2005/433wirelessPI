@@ -5,7 +5,7 @@ Control an arduino
 https://github.com/maditnerd/RpiArduinoCommand
 
 Control SCS / CHACON / DIO Power Outlet
-https://github.com/maditnerd/hcc/
+https://github.com/maditnerd/hcc/ (http://blog.idleman.fr/)
 
 
 433wirelessPI
